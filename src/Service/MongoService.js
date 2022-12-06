@@ -1,6 +1,6 @@
 const { MongoClient } = require("mongodb");
 
-const uri = "mongodb+srv://<user>:<password>@<cluster-url>?retryWrites=true&writeConcern=majority";
+const uri = "mongodb+srv://<user>:<password>@cluster0.n8ezs56.mongodb.net/?retryWrites=true&w=majority";
 const client = new MongoClient(uri);
 
 async function find(num) {
@@ -8,7 +8,7 @@ async function find(num) {
         await client.connect();
         const db = client.db('HealthBase');
         const coll = db.collection('Patients');
-        let query = db.find().limit(num);
+        let query = coll.find().limit(num);
 
         return query;
     } finally {
