@@ -1,25 +1,51 @@
-const { MongoClient } = require("mongodb");
+const { MongoClient } = require('mongodb');
 
+<<<<<<< HEAD
+let client = null;
+=======
 let tempUN = "[I will insert user here soon]"
 let tempPW = "[I will insert pass here soon]" 
 
 const uri = "mongodb+srv://" + tempUN + ":" + tempPW + "@<cluster-url>?retryWrites=true&writeConcern=majority";
 const client = new MongoClient(uri);
+>>>>>>> a9c08537388c99496e2e456fd8aedb9193f3e7b5
 
-async function find(num) {
+/**
+ * Opens connection between client and database
+ */
+async function databaseConnect() {
+    const uri = `mongodb+srv://${process.env.MONGODB_USER}:${process.env.MONGODB_PASS}@cluster-app.mxqexwg.mongodb.net/?retryWrites=true&w=majority`;
     try {
+        client = new MongoClient(uri);
         await client.connect();
-        const db = client.db('HealthBase');
-        const coll = db.collection('Patients');
-        let query = coll.find().limit(num);
-
-        return query;
-    } finally {
-        await client.close();
+        console.log('Successfully connected to database.')
+    } catch {
+        console.log(e);
     }
 }
 
-find().catch( error => {
-    console.log(error);
-    return null;
-});
+/**
+ * Closes database connection if client not null
+ */
+async function databaseClose() {
+    if (client == null) {
+        return;
+    }
+    client.close();
+}
+
+/**
+ * Queries the first user-given amount of entrees within the database.
+ *  
+ * @param {*} num 
+ * @returns 
+ */
+async function find(num) {
+    if (client == null) {
+        return;
+    }
+    let db = client.db(process.env.DATABASE_NAME);
+    let patients = db.collection(process.env.DATABASE_COLLECTION);
+
+    return patients.find().limit(num);
+}
