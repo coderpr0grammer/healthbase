@@ -39,8 +39,6 @@ async function getPatientList(num) {
     if (client == null) {
         return;
     }
-    let db = client.db(process.env.DATABASE_NAME);
-    let collection = db.collection(process.env.DATABASE_COLLECTION);
 
     return collection.find().limit(num).toArray();
 }
@@ -55,4 +53,5 @@ async function addPatient(patient) {
         console.log('Cannot insert a null object');
         return;
     }
+    
 }
