@@ -19,7 +19,7 @@ async function find(num) {
     }
 }
 
-init().catch( error => {
+find().catch( error => {
     console.log(error);
     return null;
 });
