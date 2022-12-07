@@ -1,6 +1,14 @@
 const { MongoClient } = require('mongodb');
 
+<<<<<<< HEAD
 let client = null;
+=======
+let tempUN = "[I will insert user here soon]"
+let tempPW = "[I will insert pass here soon]" 
+
+const uri = "mongodb+srv://" + tempUN + ":" + tempPW + "@<cluster-url>?retryWrites=true&writeConcern=majority";
+const client = new MongoClient(uri);
+>>>>>>> a9c08537388c99496e2e456fd8aedb9193f3e7b5
 
 /**
  * Opens connection between client and database
