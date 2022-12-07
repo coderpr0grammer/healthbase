@@ -1,7 +1,7 @@
 import './LandingPage.css'
 import HomePicture from "../Assets/LandingPagePicture1200x900.png"
 
-function Home(){
+function Home(){    
     return (
     <div className="homeContainer">
         <header className="homeHeader">
