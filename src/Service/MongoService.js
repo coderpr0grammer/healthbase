@@ -1,22 +1,43 @@
-const { MongoClient } = require("mongodb");
+const { MongoClient } = require('mongodb');
 
-const uri = "mongodb+srv://<user>:<password>@cluster0.n8ezs56.mongodb.net/?retryWrites=true&w=majority";
-const client = new MongoClient(uri);
+let client = null;
 
-async function find(num) {
+/**
+ * Opens connection between client and database
+ */
+async function databaseConnect() {
+    const uri = `mongodb+srv://${process.env.MONGODB_USER}:${process.env.MONGODB_PASS}@cluster-app.mxqexwg.mongodb.net/?retryWrites=true&w=majority`;
     try {
+        client = new MongoClient(uri);
         await client.connect();
-        const db = client.db('HealthBase');
-        const coll = db.collection('Patients');
-        let query = coll.find().limit(num);
-
-        return query;
-    } finally {
-        await client.close();
+        console.log('Successfully connected to database.')
+    } catch {
+        console.log(e);
     }
 }
 
-find().catch( error => {
-    console.log(error);
-    return null;
-});
+/**
+ * Closes database connection if client not null
+ */
+async function databaseClose() {
+    if (client == null) {
+        return;
+    }
+    client.close();
+}
+
+/**
+ * Queries the first user-given amount of entrees within the database.
+ *  
+ * @param {*} num 
+ * @returns 
+ */
+async function find(num) {
+    if (client == null) {
+        return;
+    }
+    let db = client.db(process.env.DATABASE_NAME);
+    let patients = db.collection(process.env.DATABASE_COLLECTION);
+
+    return patients.find().limit(num);
+}
