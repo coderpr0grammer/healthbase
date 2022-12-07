@@ -1,14 +1,7 @@
 const { MongoClient } = require('mongodb');
 
-<<<<<<< HEAD
 let client = null;
-=======
-let tempUN = "[I will insert user here soon]"
-let tempPW = "[I will insert pass here soon]" 
-
-const uri = "mongodb+srv://" + tempUN + ":" + tempPW + "@<cluster-url>?retryWrites=true&writeConcern=majority";
-const client = new MongoClient(uri);
->>>>>>> a9c08537388c99496e2e456fd8aedb9193f3e7b5
+let collection = null;
 
 /**
  * Opens connection between client and database
@@ -18,6 +11,8 @@ async function databaseConnect() {
     try {
         client = new MongoClient(uri);
         await client.connect();
+        let db = client.db(process.env.DATABASE_NAME); // gets database from mongodb
+        collection = db.collection(process.env.DATABASE_COLLECTION);    // sets collection to collection var
         console.log('Successfully connected to database.')
     } catch {
         console.log(e);
@@ -37,15 +32,27 @@ async function databaseClose() {
 /**
  * Queries the first user-given amount of entrees within the database.
  *  
- * @param {*} num 
- * @returns 
+ * @param {*} num limit for query 
+ * @returns array containing objects found within patients collection
  */
-async function find(num) {
+async function getPatientList(num) {
     if (client == null) {
         return;
     }
     let db = client.db(process.env.DATABASE_NAME);
-    let patients = db.collection(process.env.DATABASE_COLLECTION);
+    let collection = db.collection(process.env.DATABASE_COLLECTION);
 
-    return patients.find().limit(num);
+    return collection.find().limit(num).toArray();
+}
+
+/**
+ * Adds new patient object to collection
+ * 
+ * @param {*} patient patient object to be added
+ */
+async function addPatient(patient) {
+    if (patient == null) {
+        console.log('Cannot insert a null object');
+        return;
+    }
 }
