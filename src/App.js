@@ -6,7 +6,10 @@ import Database from './components/Database';
 import {BrowserRouter as Router, Route} from "react-router-dom";
 import React from 'react';
 
+import DynamicList from './Components/DynamicList';
+
 function App() {
+<<<<<<< HEAD
   return(
     
     <Router>
@@ -33,5 +36,13 @@ function App() {
   )
 
   }
+=======
+  return (
+    <div className='App'>
+      <DynamicList />
+    </div>
+  );
+}
+>>>>>>> 29c2200c8dffa157c1e4ff2e4871dc92b5e2b061
 
 export default App;
