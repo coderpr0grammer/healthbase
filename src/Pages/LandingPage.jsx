@@ -1,5 +1,5 @@
 import './LandingPage.css'
-import HomePicture from "../Assets/LandingPagePicture1200x900.png"
+import HomePicture from "../Assets/LandingPagePicture.png"
 import InkedHomePicture from "../Assets/InkedLandingPage.jpg"
 
 function Home(){    
