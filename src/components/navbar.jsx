@@ -12,7 +12,7 @@ function Navbar(){
             </a>
         </div>
         <ul className="navList">
-            <Link to="/">Home</Link>
+            <Link to="/">Home</Link> 
             <Link to="/send">Send</Link>
             <Link to="/database">Database</Link>
         </ul>
