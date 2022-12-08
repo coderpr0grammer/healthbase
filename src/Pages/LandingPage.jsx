@@ -1,10 +1,6 @@
 import './LandingPage.css'
 import HomePicture from "../Assets/LandingPagePicture1200x900.png"
-<<<<<<< HEAD
 import InkedHomePicture from "../Assets/InkedLandingPage.jpg"
-=======
-import LoginPage from ".LoginPage"
->>>>>>> f492402a9a1d4cbb41b1aa884b38916a88807af3
 
 function Home(){    
     return (
