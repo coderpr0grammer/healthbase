@@ -6,7 +6,6 @@
 
 .homeHeader {
     float: left;
-   
     margin-right: 4vw;
 }
 
@@ -59,11 +58,13 @@
     height: 60vh;
 }
 
-.textSection {
+.textSection div{
     padding-top: 30vh;
     font-style: normal;
-    width:30vw;
-    float:left;
+    width: 30vw;
+    float: left;
+    margin-right: 4vw;
+    padding-bottom: 40vh; /*Here temp*/
 }
 
 .textSection h1{
@@ -76,7 +77,3 @@
 .textSection p{
     font-size: 1.5rem;
 }
-
-/* .textInfo h1{
-    
-} */
