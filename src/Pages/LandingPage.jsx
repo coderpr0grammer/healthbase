@@ -1,5 +1,6 @@
 import './LandingPage.css'
 import HomePicture from "../Assets/LandingPagePicture1200x900.png"
+import LoginPage from ".LoginPage"
 
 function Home(){    
     return (
@@ -11,7 +12,7 @@ function Home(){
             </div>
             <div className="button">
                 <a className="signupButton" href="/signup">SIGN UP</a>
-                <a className="loginButton" href="/login ">LOGIN</a>
+                <a className="loginButton" href="/login" element={<LoginPage/>}>LOGIN</a> {/*This makes an error... I'll figure this out in the morning*/}
             </div>
         </header>
         <img className="homePicture" src={HomePicture} /> {/*DON'T PUT IT IN THE HEADER IT WILL RUIN EVERYTHING*/}
