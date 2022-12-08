@@ -1,6 +1,10 @@
 import './LandingPage.css'
 import HomePicture from "../Assets/LandingPagePicture1200x900.png"
+<<<<<<< HEAD
 import InkedHomePicture from "../Assets/InkedLandingPage.jpg"
+=======
+import LoginPage from ".LoginPage"
+>>>>>>> f492402a9a1d4cbb41b1aa884b38916a88807af3
 
 function Home(){    
     return (
@@ -12,7 +16,7 @@ function Home(){
             </div>
             <div className="button">
                 <a className="signupButton" href="/signup">SIGN UP</a>
-                <a className="loginButton" href="/login ">LOGIN</a>
+                <a className="loginButton" href="/login" element={<LoginPage/>}>LOGIN</a> {/*This makes an error... I'll figure this out in the morning*/}
             </div>
         </header>
         {/*DON'T PUT IT IN THE HEADER IT WILL RUIN EVERYTHING*/}
