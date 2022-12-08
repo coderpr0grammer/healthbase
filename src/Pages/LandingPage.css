@@ -1,14 +1,12 @@
 .homeContainer {
-    height: 100%;
-    width: 100%;
+    margin-left: 15vw;
     margin-top: 12vh;
-    display: flex;
     align-items: center;
-    float: left;
 }
 
 .homeHeader {
-    margin-left: 15vw;
+    float: left;
+   
     margin-right: 4vw;
 }
 
@@ -59,4 +57,26 @@
 
 .homePicture {
     height: 60vh;
+}
+
+.textSection {
+    padding-top: 30vh;
+    font-style: normal;
+    width:30vw;
+    float:left;
+}
+
+.textSection h1{
+    font-weight: 700;
+    font-size: 3.5rem;
+
+    color: #2AACFF;
+}
+
+.textSection p{
+    font-size: 1.5rem;
+}
+
+.textInfo h1{
+    
 }
