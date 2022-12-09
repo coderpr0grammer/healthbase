@@ -1,16 +1,17 @@
 import "./InputPage.css"
+import {Link} from "react-router-dom";
 
 function Login () {
     return (
         <div className="inputContainer">
             <h1 className="inputHeader">Login to HealthBase.</h1>
-            <div className="inputForm">
+            <form className="inputForm">
                 <p>Please enter your ID:</p>
                 <input type="text" name="username" required/>  
                 <p>Password:</p>
                 <input type="password" name="password" required/>  
-            </div>
-              <a className="inputSiteButton" href="/database">LOGIN</a>
+            </form>
+              <Link to="/database" className="inputSiteButton">LOGIN</Link>
         </div>
     )
 }
