@@ -1,4 +1,3 @@
-import './App.css';
 import Navbar from './Components/Navbar';
 import Home from './Pages/LandingPage';
 import Send from './Pages/Send';
@@ -26,6 +25,7 @@ function App() {
           <Route path='/database' element={<Database />} />
 
           <Route path="/login" exact element={<LoginPage />} />
+          
           <Route path="/signup" exact element={<SignupPage />} />
           <Route path="/applied" exact element={<Applied />} />
         </Routes>
