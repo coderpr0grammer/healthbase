@@ -8,7 +8,7 @@ function Signup () {
                 <p>Please enter your organization's name:</p>
                 <input type="text" name="organization" required/>  
                 <p>Please enter an email address to contact:</p>
-                <input type="email" name="emailaddress" required/>  
+                <input type="text" name="emailaddress" required/>  
                 <input className="inputSiteButton">JOIN NOW</input>
             </form>
         </div>
