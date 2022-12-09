@@ -27,6 +27,7 @@ function App() {
           <Route path="/login" exact element={<LoginPage />} />
           
           <Route path="/signup" exact element={<SignupPage />} />
+          
           <Route path="/applied" exact element={<Applied />} />
         </Routes>
       </BrowserRouter>
