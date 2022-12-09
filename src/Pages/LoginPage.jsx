@@ -1,16 +1,15 @@
+import "./LoginPage.css"
+
 function Login () {
     return (
         <div className="loginContainer">
-            <div className="loginHeader">
-                <h1>Login to HealthBase.</h1>
-            </div>
+            <h1 className="loginHeader">Login to HealthBase.</h1>
             <div className="loginForm">
-                <p>Please enter your identification:</p>
+                <p>Please enter your ID:</p>
                 <p>Password:</p>
             </div>
-            <div className="button">
-                <a className="loginButton" href="/login ">LOGIN</a>
-            </div>
+             
+              <a className="loginSiteButton">LOGIN</a>
         </div>
     )
 }

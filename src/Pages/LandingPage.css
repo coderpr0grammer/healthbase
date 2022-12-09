@@ -58,13 +58,16 @@
     height: 60vh;
 }
 
-.textSection div{
+.section1 {
     padding-top: 30vh;
+    padding-bottom: 40vh;
+}
+
+.textSection div{
     font-style: normal;
     width: 30vw;
     float: left;
     margin-right: 4vw;
-    padding-bottom: 40vh; /*Here temp*/
 }
 
 .textSection h1{
