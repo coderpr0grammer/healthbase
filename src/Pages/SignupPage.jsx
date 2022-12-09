@@ -10,7 +10,7 @@ function Signup () {
                 <p>Please enter an email address to contact:</p>
                 <input type="email" name="emailaddress" required/>  
             </div>
-              <a className="inputSiteButton" href="/database">JOIN NOW</a>
+              <a className="inputSiteButton" href="/applied">JOIN NOW</a>
         </div>
     )
 }
