@@ -12,7 +12,7 @@ function Home(){
             </div>
             <div className="button">
                 <a className="signupButton" href="/signup">SIGN UP</a>
-                <a className="loginButton" href="/login" element={<LoginPage/>}>LOGIN</a> {/*This makes an error... I'll figure this out in the morning*/}
+                <a className="loginButton" href="/login">LOGIN</a> 
             </div>
         </header>
         {/*DON'T PUT IT IN THE HEADER IT WILL RUIN EVERYTHING*/}
