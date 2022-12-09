@@ -1,7 +1,5 @@
 import "./InputPage.css"
 
-import {Link} from "react-router-dom";
-
 function Login () {
     return (
         <div className="inputContainer">
