@@ -1,6 +1,8 @@
 import "./InputPage.css"
 
-function Signup () {
+import {Link} from 'react-router-dom';
+
+function Signup() {
     return ( 
         <div className="inputContainer">
             <h1 className="inputHeader">Sign up with HealthBase.</h1>
@@ -11,6 +13,7 @@ function Signup () {
                 <input className="inputTextBox" type="text" name="emailaddress" required/>  
                 <input className="inputSiteButton" type="submit" value="JOIN NOW"/>
             </form>
+            <Link to="/login" className="redirectLink">Already have an account? Click here to login.</Link>
         </div>
     )
 }
