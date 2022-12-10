@@ -48,7 +48,7 @@ function Login ({user}) {
                 <input className = "inputTextBox" type="password" onChange={handleChange} name="password" required/>  
                 <input className="inputSiteButton" type="submit" value="LOGIN"/>
             </form>
-            <p className={`passStatus ${!passStatus ? 'incorrect' : ''}`}>Invalid login credentials. Please try again.</p>
+            <p className={`passStatus ${passStatus==false ? 'incorrect' : ''}`}>Invalid login credentials. Please try again.</p>
             <Link to="/signup" className="redirectLink">Don't have an account yet? Click here to sign up.</Link>
         </div>
     )
