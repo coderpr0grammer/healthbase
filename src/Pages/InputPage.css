@@ -1,0 +1,50 @@
+.inputContainer {
+    margin: auto;
+    margin-top: 6vh;
+    width: 30%;
+}
+
+.inputHeader {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 6rem;    
+    padding-bottom: 3vh;
+
+    color: #2AACFF;
+    border-bottom: 1px solid #BDBDBD;
+}
+
+.inputForm {
+    padding-top: 2vh;
+}
+
+.inputForm p {
+    font-size: 1.5rem;
+}
+
+.inputTextBox {
+    width: 90%;
+    border-radius: 7px;
+    font-size: 1.5rem;
+    border: 1px solid #8f8f8f;
+    margin-bottom: 1vh;
+}
+
+.inputSiteButton {
+    border: 0px;
+    margin-top: 4vh;
+    line-height: 8vh;
+    padding: 0.03vw 4vw 0.03vw 4vw; 
+    background-color: #2AACFF;
+
+    font-size: 3vh;
+    text-decoration: none;
+    font-weight: 700;
+    
+    color: white;
+}
+
+.inputSiteButton:hover {
+    background-color: #2da2ed;
+    color: #f0f0f0;
+}

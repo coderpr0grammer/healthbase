@@ -1,14 +1,11 @@
 .homeContainer {
-    height: 100%;
-    width: 100%;
+    margin-left: 15vw;
     margin-top: 12vh;
-    display: flex;
     align-items: center;
-    float: left;
 }
 
 .homeHeader {
-    margin-left: 15vw;
+    float: left;
     margin-right: 4vw;
 }
 
@@ -16,7 +13,7 @@
     width: 30vw;
     font-style: normal;
     font-weight: 700;
-    font-size: 6rem;
+    font-size: 5vw;
 
     color: #2AACFF;
 }
@@ -26,7 +23,7 @@
     margin-left: 0.28vw;
     font-style: normal;
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1.25vw;
 
     color: black;
 }
@@ -60,3 +57,36 @@
 .homePicture {
     height: 60vh;
 }
+
+.section1 {
+    padding-top: 30vh;
+    padding-bottom: 40vh;
+}
+
+.textSection li{
+    font-style: normal;
+    width: 33vw;
+    height: 17vw;
+    float: left;
+    margin-right: 4vw;
+    margin-right: 2vw;
+    display: inline;
+}
+
+.textSection h1{
+    font-weight: 700;
+    font-size: 2.8vw;
+
+    color: #2AACFF;
+}
+
+.textSection p{
+    font-size: 1.25vw;
+}
+
+.ourPurpose {
+    padding-top: 20vh;
+    margin-right: 15vw;
+    padding-bottom: 10vh;
+}
+

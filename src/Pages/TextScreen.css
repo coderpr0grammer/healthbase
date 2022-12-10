@@ -1,0 +1,19 @@
+.textScreen {
+    margin: auto;
+    margin-top: 6vh;
+    width: 50%;
+    text-align: center;
+}
+
+.textScreenHeader {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5rem;    
+    padding-bottom: 3vh;
+
+    color: #2AACFF;
+}
+
+.textScreenBlurb {
+    font-size: 2rem;    
+}
