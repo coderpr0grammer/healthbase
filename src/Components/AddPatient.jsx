@@ -1,14 +1,20 @@
-function addPatient({active}) {
+import './AddPatient.css'
+
+function AddPatient({active, changeState}) {
+    
+    function handleClick() {
+        changeState(false);
+    }
     
     return (
-        <div className={`patientAddModal ${active ? modalActive : ''}`}>
-            <div className='modalCloseButton'>
-                X
+        <div >
+            <div className='modalCloseButton' onClick={handleClick}>
+                <p>this is a test</p>
             </div>
-            <form>
-                
-            </form>
+            {active.toString()}
 
         </div>
     );
 }
+
+export default AddPatient;

@@ -1,5 +1,5 @@
 import {useState} from 'react';
-
+import AddPatient from './AddPatient';
 
 function PatientList() {
 
@@ -12,11 +12,16 @@ function PatientList() {
     return (
         <div className="listContainer">
             <div className="patientList">
-                {patientList}
+                {/* {patientList} */}
             </div>
-            <button className={`addPatient ${modalActive ? disabled : ''}`} onClick={openPatientModal}>
+            {modalActive.toString()}
+            <button className={`addPatient`} disabled={modalActive} onClick={openPatientModal}>
                 + Add Patient
             </button>
+            <AddPatient 
+                active={modalActive}
+                changeState={setModalState}
+            />
         </div> 
     )
 }

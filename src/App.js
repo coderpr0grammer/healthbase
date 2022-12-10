@@ -3,6 +3,7 @@ import Home from './Pages/LandingPage';
 import LoginPage from "./Pages/LoginPage";
 import SignupPage from "./Pages/SignupPage";
 import Applied from "./Pages/Applied";
+import Database from "./Pages/Database";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 
 import {useState} from 'react';
@@ -22,11 +23,13 @@ function App() {
             <Routes>
                 <Route path="/" exact element={<Home />} />
  
-                <Route path="/login" exact element={<LoginPage />} />
+                <Route path="/login" element={<LoginPage />} />
      
-                <Route path="/signup" exact element={<SignupPage />} />
+                <Route path="/signup" element={<SignupPage />} />
+
+                <Route path="/database" element={<Database />} /> 
      
-                <Route path="/thankyou" exact element={<Applied />} />
+                <Route path="/thankyou" element={<Applied />} />
             </Routes>
         </BrowserRouter>
     );
