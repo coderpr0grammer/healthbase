@@ -12,11 +12,15 @@
 
 #unique-btn {
     border: none;
-    margin-top: 4vh;
+    margin-top: 3vh;
+    margin-bottom: 7vh;
     color: #f7f7f7;
     line-height: 8vh;
     padding: 0.03vw 4vw 0.03vw 4vw; 
     background-color: #2AACFF;
+
+    position: fixed;
+    left: 35%;
 
     font-size: 3vh;
     text-decoration: none;
