@@ -26,7 +26,7 @@ function Send(){
         return (
             <div className="textScreen">
                 <h1 className="textScreenHeader">You must be logged in to view this information.</h1>
-                <p className="textScreenBlurb">Please visit the home page to log in or sign up to use this service.</p>
+                <p className="textScreenBlurb">Please visit the home page and log in or sign up to use this service.</p>
             </div>
         )
     } else {
