@@ -22,6 +22,7 @@ function Login ({user}) {
         .then((response) => {
             if (response.status == 200) {
                 user = input
+                changePassStatus(true)
             }
             else {
                 changePassStatus(false)
