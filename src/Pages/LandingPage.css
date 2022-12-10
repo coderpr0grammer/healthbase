@@ -58,26 +58,19 @@
     height: 60vh;
 }
 
-<<<<<<< HEAD
 .section1 {
     padding-top: 30vh;
     padding-bottom: 40vh;
 }
 
-.textSection div{
-=======
 .textSection li{
->>>>>>> 324eb308a6e52965585c9597fb3423454a32cf59
     font-style: normal;
     width: 33vw;
     height: 17vw;
     float: left;
-<<<<<<< HEAD
     margin-right: 4vw;
-=======
     margin-right: 2vw;
     display: inline;
->>>>>>> 324eb308a6e52965585c9597fb3423454a32cf59
 }
 
 .textSection h1{
