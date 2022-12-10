@@ -58,11 +58,17 @@
     height: 60vh;
 }
 
+.section1 {
+    padding-top: 30vh;
+    padding-bottom: 40vh;
+}
+
 .textSection li{
     font-style: normal;
     width: 33vw;
     height: 17vw;
     float: left;
+    margin-right: 4vw;
     margin-right: 2vw;
     display: inline;
 }
