@@ -58,9 +58,10 @@
     color: #f0f0f0;
 }
 
-.section1 {
-    padding-top: 30vh;
-    padding-bottom: 40vh;
+.textsection {
+    position: absolute;
+    display: flex;
+    margin-left: 16vw;
 }
 
 #aboutus {
@@ -74,7 +75,9 @@
 }
 
 #benefits {
+    display: inline;
     list-style-position: inside;
+    list-style-type: none; 
     padding-left: 0;
 }
 
@@ -83,8 +86,8 @@
     width: 33vw;
     height: 35vh;
     float: left;
-    padding-right: 2vw;
-    display: inline;
+    margin-right: 2vw;
+    margin: auto;
 }
 
 #aboutus h1{

@@ -7,9 +7,12 @@ function AddPatient({state, changeState}) {
     }
     
     return (
-        <div className={`modal ${state ? 'modalActive' : 'modalClosed'}`}>
-            <div className='modalCloseButton' onClick={handleClick}>
-                <p>this is a test</p>
+        <div className={`modal, ${state ? 'modalActive' : 'modalClosed'}`}>
+            <span className='modalOverlay' />
+            <div className='modalBox'>
+                <div className='modalCloseButton' onClick={handleClick}>
+                    X
+                </div>
             </div>
             {state.toString()}
 
