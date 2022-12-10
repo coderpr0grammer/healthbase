@@ -15,11 +15,11 @@ function PatientList() {
                 {/* {patientList} */}
             </div>
             {modalActive.toString()}
-            <button className={`addPatient`} disabled={modalActive} onClick={openPatientModal}>
+            <button className={`addPatient`} onClick={openPatientModal}>
                 + Add Patient
             </button>
             <AddPatient 
-                active={modalActive}
+                state={modalActive}
                 changeState={setModalState}
             />
         </div> 

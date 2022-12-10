@@ -1,17 +1,17 @@
 import './AddPatient.css'
 
-function AddPatient({active, changeState}) {
+function AddPatient({state, changeState}) {
     
     function handleClick() {
         changeState(false);
     }
     
     return (
-        <div >
+        <div className={`modal ${state ? 'modalActive' : 'modalClosed'}`}>
             <div className='modalCloseButton' onClick={handleClick}>
                 <p>this is a test</p>
             </div>
-            {active.toString()}
+            {state.toString()}
 
         </div>
     );
