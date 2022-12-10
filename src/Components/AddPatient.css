@@ -1,6 +1,28 @@
-/* .modal {
-    z-index: 10000;
+.modal {
+    white-space: nowrap;
+    width: 100%;
+    height: 100%;
+
+}
+
+.modalBox {
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
     background-color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 10001;
+}
+
+.modalOverlay {
+    top: 0;
+    position: fixed;
+    display: inline-block;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 10000;
 }
 
 .modalActive {
@@ -14,5 +36,6 @@
 }
 
 .modalCloseButton {
+    font-size: 2vw;
     cursor: pointer;
-} */
+}
