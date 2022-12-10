@@ -10,25 +10,48 @@
   box-shadow:0 0 5px 1px rgba(0,0,0,0.06);
 }
 
-.inputSiteButton {
-    border: 0px;
+#unique-btn {
+    border: none;
     margin-top: 4vh;
+    color: #f7f7f7;
     line-height: 8vh;
     padding: 0.03vw 4vw 0.03vw 4vw; 
-    background-color: #f0f0f0;
+    background-color: #2AACFF;
 
     font-size: 3vh;
     text-decoration: none;
     font-weight: 700;
     
-    color: white;
-    display: flex;
-    justify-content: center;
+    transition: ease-out 0.3s;
+    outline: none;
+    position: relative;
+    z-index: 1;
+    
 }
 
-.inputSiteButton:hover {
-    background-color: #f0f0f0;
-    color: #f0f0f0;
+#unique-btn:hover {
+    color: #f7f7f7;
+    cursor: pointer;
+}
+
+#unique-btn:before{
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background: rgb(42, 172, 112);
+}
+
+#unique-btn:hover:before{
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
 }
 
 .mainHeader{
@@ -37,9 +60,13 @@
     text-align: center;
     padding: 0.8vh;
     border-bottom: 1px solid #BDBDBD;
-    /* border-style: solid;
-    border-color: #2da2ed;
-    border-width: thick; */
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.5rem;    
+    padding-bottom: 3vh;
+
+    color: #2AACFF;
     
 }
 

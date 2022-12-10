@@ -60,7 +60,7 @@ function Send(){
                     </div>
                     
                     <div>
-                    <button onClick={handleClick} className="inputSiteButton btn btn-lg btn-info">SAVE TO FILE</button>
+                    <button onClick={handleClick} id='unique-btn' className="inputSiteButton">SAVE TO FILE</button>
                     </div>
                 </form>
             </div>
