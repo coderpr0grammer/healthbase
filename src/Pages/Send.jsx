@@ -1,9 +1,13 @@
 import React, {useState} from 'react';
+import './Send.css'
 
 function Send(){
     const [input, setInput] = useState({
         patientName: '',
-        data1: ''
+        dateOfBirth: '',
+        height: '',
+        contactNumber: '',
+        medicalRecordsNotes: ''
     })
 
     function handleChange(event){
@@ -32,17 +36,32 @@ function Send(){
     } else {
         return (
             <div className='container'>
-                <h1>Input patient information on this page</h1>
+                <h1 className="mainHeader">Complete the Form to Store Data</h1>
                 <form>
+                    <h5 className="infoHeader">Patient Name</h5>
                     <div className='form-group'>
                         <input onChange={handleChange} name='patientName' value={input.name} autoComplete="off" className='form-control' placeholder="Add Patient Name"></input>
                     </div>
+                    <h5 className="infoHeader">Date of Birth</h5>
                     <div className='form-group'>
-                        <textarea onChange={handleChange} name='content' value={input.data1} autoComplete="off" className='form-control' placeHolder="Add Data 1"></textarea>
+                        <textarea onChange={handleChange} name='dateOfBirth' value={input.data1} autoComplete="off" className='form-control' placeHolder="YYYY-MM-DD"></textarea>
+                    </div>
+                    <h5 className="infoHeader">Patient Height</h5>
+                    <div className='form-group'>
+                        <textarea onChange={handleChange} name='height' value={input.data1} autoComplete="off" className='form-control' placeHolder="In Centimeters"></textarea>
+                    </div>
+                    <h5 className="infoHeader">Contact Number</h5>
+                    <div className='form-group'>
+                        <textarea onChange={handleChange} name='contactNumber' value={input.data1} autoComplete="off" className='form-control' placeHolder="(123) 456-7890"></textarea>
+                    </div>
+                    <h5 className="infoHeader">Medical Notes of Patient</h5>
+                    <div className='form-group'>
+                        <textarea onChange={handleChange} name='medicalRecordsNotes' value={input.data1} autoComplete="off" className='form-control' placeHolder="Medical Concerns? Updates on treatments or progress?"></textarea>
                     </div>
                     
-                    
-                    <button onClick={handleClick} className="btn btn-lg btn-info">ADD STUFF</button>
+                    <div>
+                    <button onClick={handleClick} id='unique-btn' className="inputSiteButton">SAVE TO FILE</button>
+                    </div>
                 </form>
             </div>
         )
