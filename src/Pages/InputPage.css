@@ -22,7 +22,7 @@
     font-size: 1.5rem;
 }
 
-.inputForm input {
+.inputTextBox {
     width: 90%;
     border-radius: 7px;
     font-size: 1.5rem;
@@ -31,9 +31,10 @@
 }
 
 .inputSiteButton {
-    line-height: 15vh;
-    width: 5vh;
-    padding: 1vw 3.87vw 1vw 3.87vw; 
+    border: 0px;
+    margin-top: 4vh;
+    line-height: 8vh;
+    padding: 0.03vw 4vw 0.03vw 4vw; 
     background-color: #2AACFF;
 
     font-size: 3vh;
