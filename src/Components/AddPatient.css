@@ -1,0 +1,18 @@
+/* .modal {
+    z-index: 10000;
+    background-color: white;
+}
+
+.modalActive {
+    opacity: 100%;
+    visibility: visible;
+}
+
+.modalClosed {
+    opacity: 0%;
+    visibility: hidden;
+}
+
+.modalCloseButton {
+    cursor: pointer;
+} */

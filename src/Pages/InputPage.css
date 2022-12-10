@@ -7,7 +7,7 @@
 .inputHeader {
     font-style: normal;
     font-weight: 700;
-    font-size: 6rem;    
+    font-size: 9vh;    
     padding-bottom: 3vh;
 
     color: #2AACFF;
@@ -19,13 +19,13 @@
 }
 
 .inputForm p {
-    font-size: 1.5rem;
+    font-size: 2.5vh;
 }
 
 .inputTextBox {
-    width: 90%;
+    width: 100%;
     border-radius: 7px;
-    font-size: 1.5rem;
+    font-size: 2.5vh;
     border: 1px solid #8f8f8f;
     margin-bottom: 1vh;
     box-shadow:0 0 5px 1px rgba(0,0,0,0.06);
@@ -34,7 +34,7 @@
 .inputSiteButton {
     border: 0px;
     margin-top: 4vh;
-    line-height: 8vh;
+    line-height: 9vh;
     padding: 0.03vw 4vw 0.03vw 4vw; 
     background-color: #2AACFF;
 
@@ -48,4 +48,18 @@
 .inputSiteButton:hover {
     background-color: #2da2ed;
     color: #f0f0f0;
+}
+
+.redirectLink {
+    line-height: 9vh;
+    font-size: 20px;
+}
+
+.passStatus {
+    opacity: 0;
+    color: red;
+}
+
+.incorrect {
+    opacity: 100%;
 }
