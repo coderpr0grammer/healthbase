@@ -13,7 +13,7 @@
     width: 30vw;
     font-style: normal;
     font-weight: 700;
-    font-size: 6rem;
+    font-size: 5vw;
 
     color: #2AACFF;
 }
@@ -23,7 +23,7 @@
     margin-left: 0.28vw;
     font-style: normal;
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1.25vw;
 
     color: black;
 }
@@ -58,25 +58,42 @@
     height: 60vh;
 }
 
+<<<<<<< HEAD
 .section1 {
     padding-top: 30vh;
     padding-bottom: 40vh;
 }
 
 .textSection div{
+=======
+.textSection li{
+>>>>>>> 324eb308a6e52965585c9597fb3423454a32cf59
     font-style: normal;
-    width: 30vw;
+    width: 33vw;
+    height: 17vw;
     float: left;
+<<<<<<< HEAD
     margin-right: 4vw;
+=======
+    margin-right: 2vw;
+    display: inline;
+>>>>>>> 324eb308a6e52965585c9597fb3423454a32cf59
 }
 
 .textSection h1{
     font-weight: 700;
-    font-size: 3.5rem;
+    font-size: 2.8vw;
 
     color: #2AACFF;
 }
 
 .textSection p{
-    font-size: 1.5rem;
+    font-size: 1.25vw;
 }
+
+.ourPurpose {
+    padding-top: 20vh;
+    margin-right: 15vw;
+    padding-bottom: 10vh;
+}
+
