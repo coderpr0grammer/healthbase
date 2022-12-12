@@ -1,5 +1,6 @@
 import {useState} from 'react';
 import AddPatient from './AddPatient';
+import "./PatientList.css"
 
 function PatientList({user}) {
 
@@ -11,6 +12,7 @@ function PatientList({user}) {
 
     return (
         <div className="listContainer">
+            <h1>Patient List</h1>
             <div className="patientList">
                 {/* {patientList} */}
             </div>
