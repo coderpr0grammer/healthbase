@@ -1,0 +1,21 @@
+.patientList  {
+
+}
+
+.patientList {
+    width: 45vw;
+    height: 87vh;
+    border: 2px black solid;
+    border-radius: 5px; 
+    margin: 2vh 2vh;
+}
+
+.patientContainer {
+    border: 2px solid rgba(0,0,0,0.1);
+    background-color: rgba(0,0,0,0.05);
+}
+
+.addPatient {
+    text-align: center;
+    cursor: pointer;
+}
