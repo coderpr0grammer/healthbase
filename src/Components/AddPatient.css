@@ -1,6 +1,33 @@
-/* .modal {
-    z-index: 10000;
+.modal {
+    white-space: nowrap;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.modalBox {
+    padding: 1vh 1vw;
+    width: 50vw;
+    margin: auto;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
     background-color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 10001;
+}
+
+.modalOverlay {
+    top: 0;
+    position: fixed;
+    display: inline-block;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 10000;
 }
 
 .modalActive {
@@ -14,5 +41,37 @@
 }
 
 .modalCloseButton {
+    font-size: 2vw;
     cursor: pointer;
-} */
+    float: right;
+}
+
+.patientForm {
+
+}
+
+.divider {
+    width: 100%;
+    display: block;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    margin-bottom: 1vh;
+    margin-top: 3vh;
+}
+
+.patientForm input, .patientForm select {
+    width: 100%;
+}
+
+.patientForm label {
+    margin: 1vh 0.5vh 0 0;
+}
+
+.patientForm textarea {
+    width: 100%;
+}
+
+.patientForm button {
+    margin-top: 1vh;
+    float: right;
+    margin-left: 1vw;
+}
