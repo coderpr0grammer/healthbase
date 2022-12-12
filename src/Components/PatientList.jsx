@@ -24,6 +24,7 @@ function PatientList({user, currentPatient}) {
 
     return (
         <div className="listContainer">
+            <h1>Patient List</h1>
             <div className="patientList">
                 <div className={'addPatient patientContainer'} onClick={openPatientModal}>
                     + Add Patient
