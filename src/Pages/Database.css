@@ -1,0 +1,15 @@
+.databaseContainer {
+    display: flex;
+    margin-top: 5vh;
+}
+
+.databaseContainer div{
+    float: left;
+}   
+
+.databaseContainer h1 {
+    font-weight: 500;
+    font-size: 2vw;
+
+    color: #2AACFF;
+}

@@ -74,6 +74,8 @@
     margin-top: 1vh;
     float: right;
     margin-left: 1vw;
+    border-radius: 7px;
+    border: 1px solid #8f8f8f;
 }
 
 .form-group{
