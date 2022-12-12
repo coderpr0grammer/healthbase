@@ -1,5 +1,5 @@
 import './AddPatient.css';
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 import axios from 'axios';
 
 function AddPatient({state, changeState, user}) {
@@ -7,7 +7,7 @@ function AddPatient({state, changeState, user}) {
     const [newPatient, updatePatientInfo] = useState({
         name: null,
         healthnum: null,
-        sex: null,
+        sex: 'Male',
         dob: null,
         address: null,
         notes: null
@@ -19,7 +19,15 @@ function AddPatient({state, changeState, user}) {
     
     function handleSubmit(e) {
         e.preventDefault();
-        axios.post('https://localhost:3001/addpatient', {patient: newPatient}).then(
+        const tempPatient = {
+            name: newPatient.name,
+            healthnum: newPatient.healthnum,
+            sex: newPatient.sex,
+            dob: newPatient.dob,
+            address: newPatient.address,
+            notes: newPatient.notes
+        }
+        axios.post('http://localhost:3001/database/addpatient', tempPatient).then(
             console.log('happened')
         )
     }
@@ -31,6 +39,10 @@ function AddPatient({state, changeState, user}) {
             [e.target.name]: value 
         });
     }
+
+    useEffect(() => {
+        console.log(newPatient);
+    })
 
     return (
         <div className={`modal, ${state ? 'modalActive' : 'modalClosed'}`}>
