@@ -1,7 +1,7 @@
 import {useState} from 'react';
 import AddPatient from './AddPatient';
 
-function PatientList() {
+function PatientList({user}) {
 
     const [modalActive, setModalState] = useState(false);
 
@@ -14,13 +14,13 @@ function PatientList() {
             <div className="patientList">
                 {/* {patientList} */}
             </div>
-            {modalActive.toString()}
             <button className={`addPatient`} onClick={openPatientModal}>
                 + Add Patient
             </button>
             <AddPatient 
                 state={modalActive}
                 changeState={setModalState}
+                user={user}
             />
         </div> 
     )

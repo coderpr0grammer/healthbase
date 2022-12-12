@@ -11,16 +11,19 @@ const patientSchema = {
     },
     dob: {
         type:Date,
-        required:true,
+        required:true
+    },
+    sex: {
+        type:String,
+        required:true
     },
     address: {
         type:String,
-        required:true,
+        required:true
     },
     notes: String,
-    prescriptions: Array,
 }
 
-const Patient = mongoose.model('Patient', patientSchema);
+const Patient = mongoose.model('Patient', patientSchema, 'patients');
 
 module.exports = Patient;
