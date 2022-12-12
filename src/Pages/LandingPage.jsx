@@ -18,8 +18,6 @@ function Home(){
             </div>
             <img className="headerPicture" src={HomePicture} alt=""/>
         </header>
-        {/*DON'T PUT IT IN THE HEADER IT WILL RUIN EVERYTHING*/}
-        <img className="homePicture" src={HomePicture} alt="Smiling Doctor"/> {/*I'm sorry man i think we have to scrap the mouseover thing i can't make it work either*/}
 
         <section id="aboutus">
             <section id="purpose">
