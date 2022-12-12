@@ -26,10 +26,10 @@ function PatientList({user, currentPatient}) {
         <div className="listContainer">
             <h1>Patient List</h1>
             <div className="patientList">
-                <div className={'addPatient patientContainer'} onClick={openPatientModal}>
-                    + Add Patient
-                </div>
                 {/* {patientList} */}
+            </div>
+            <div className={'addPatient patientContainer'} onClick={openPatientModal}>
+                + Add Patient
             </div>
             <AddPatient 
                 state={modalActive}
