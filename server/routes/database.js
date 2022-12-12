@@ -12,14 +12,14 @@ router.route('/getdatabase').get((req, res) => {
 
 router.route('/addpatient').post((req, res) => {
     const newPatient = new Patient({
-        healthnum: req.patient.healthnum,
-        name: req.patient.name,
-        dob: req.patient.dob,
-        age: req.patient.age,
-        address: req.patient.address,
-        notes: req.patient.notes,
+        healthnum: req.healthnum,
+        name: req.name,
+        dob: req.dob,
+        age: req.age,
+        address: req.address,
+        notes: req.notes,
     })
-    console.log('recieved post request for new patient')
+    console.log('this is a test')
     newPatient.save();
 });
 
