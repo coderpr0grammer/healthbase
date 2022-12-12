@@ -11,7 +11,7 @@ function Signup() {
                 <input className="inputTextBox" type="text" name="organization" required/>  
                 <p>Please enter an email address to contact:</p>
                 <input className="inputTextBox" type="text" name="emailaddress" required/>  
-                <input className="inputSiteButton" type="submit" value="JOIN NOW"/>
+                <input id='unique-btn' className="inputSiteButton" type="submit" value="JOIN NOW"/>
             </form>
             <Link to="/login" className="redirectLink">Already have an account? Click here to login.</Link>
         </div>

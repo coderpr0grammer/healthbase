@@ -51,24 +51,24 @@ function AddPatient({state, changeState, user}) {
                 <div className='modalCloseButton' onClick={handleClick}>
                     X
                 </div>
-                <h1>Add Patient Form</h1>
+                <h1 className="mainHeader">Add Patient Form</h1>
                 <span className='divider' />
                 <form className='patientForm' onSubmit={(e) => handleSubmit(e)}>
-                    <label for='name'>Patient Full Name:</label>
-                    <input type='text' name='name' onChange={(e) => handleChange(e)} required/>
-                    <label for='healthnum'>Healthcard Number:</label>
-                    <input type='text' name='healthnum' onChange={(e) => handleChange(e)} required/>
-                    <label for='sex'>Sex:</label>
-                    <select name='sex' onChange={(e) => handleChange(e)} required>
+                    <label for='name' className="form-group">Patient Full Name:</label>
+                    <input className="form-control" type='text' name='name' onChange={(e) => handleChange(e)} required/>
+                    <label for='healthnum' className="form-group">Healthcard Number:</label>
+                    <input className="form-control" type='text' name='healthnum' onChange={(e) => handleChange(e)} required/>
+                    <label for='sex' className="form-group">Sex:</label>
+                    <select className="form-control" name='sex' onChange={(e) => handleChange(e)} required>
                         <option value='male'>Male</option>
                         <option value='female'>Female</option>
                     </select>
-                    <label for='dob'>Date of Birth:</label>
-                    <input type='date'name='dob' onChange={(e) => handleChange(e)} required/>
-                    <label for='address'>Address:</label>
-                    <input type='text' name='address' onChange={(e) => handleChange(e)} required/>
-                    <label for='notes'>Additional Notes:</label>
-                    <textarea type='text' name='notes' onChange={(e) => handleChange(e)}/>
+                    <label for='dob' className="form-group">Date of Birth:</label>
+                    <input className="form-control" type='date'name='dob' onChange={(e) => handleChange(e)} required/>
+                    <label for='address' className="form-group">Address:</label>
+                    <input className="form-control" type='text' name='address' onChange={(e) => handleChange(e)} required/>
+                    <label for='notes' className="form-group">Additional Notes:</label>
+                    <textarea className="form-control" type='text' name='notes' onChange={(e) => handleChange(e)}/>
                     <button type='submit'>Submit</button>
                     <button onClick={handleClick}>Cancel</button>
                 </form>
