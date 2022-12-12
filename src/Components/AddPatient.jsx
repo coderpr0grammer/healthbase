@@ -1,6 +1,4 @@
 import './AddPatient.css';
-import DatePicker from 'react-datepicker';
-import "react-datepicker/dist/react-datepicker.css";
 import {useState} from 'react';
 import axios from 'axios';
 
